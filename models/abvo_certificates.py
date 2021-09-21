@@ -7,8 +7,8 @@ class AbvoCertificates(models.Model):
 
     date = fields.Date()
 
-    certificate_type = fields.Selection([('irc', 'IRC'), ('orc', 'ORC'), ('mocra', 'MOCRA'), ('vrps', 'VRPS')],
-                                        default='irc', string='Type')
+    certificate_type = fields.Selection([('irc', 'IRC'), ('orc', 'ORC'), ('mocra', 'MOCRA'), ('vrps', 'VRPS'), ('bra-rgs', 'BRA-RGS')],
+                                        default='bra-rgs', string='Type')
     raiting = fields.Float(digits=(1, 4))
 
     loa = fields.Char()
